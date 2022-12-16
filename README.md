@@ -20,9 +20,9 @@ Cloudflare Turnstile is a CAPTCHA alternative from Cloudflare. It uses PAT proto
 ## Installation & Usage
 
 ```bash
-yarn add cfturnstile-vue3
+yarn add cfturnstile-vue2
 # or
-npm install cfturnstile-vue3
+npm install cfturnstile-vue2
 ```
 
 ```vue
@@ -36,7 +36,7 @@ npm install cfturnstile-vue3
 </template>
 <script>
 import { defineComponent } from 'vue'
-import Turnstile from 'cfturnstile-vue3'
+import Turnstile from 'cfturnstile-vue2'
 
 export default defineComponent({
   name: 'App',
