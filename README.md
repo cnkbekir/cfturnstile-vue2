@@ -1,21 +1,11 @@
-# Cloudflare Turnstile Widget Component for Vue 3
+# Cloudflare Turnstile Widget Component for Vue 2
 
-A Vue 3 component for showing the Cloudflare Turnstile widget on your project.
+A Vue 2.7 component for showing the Cloudflare Turnstile widget on your project.
 
 ## What is Cloudflare Turnstile?
 Cloudflare Turnstile is a CAPTCHA alternative from Cloudflare. It uses PAT protocol to verify the user’s devices, preventing bots and malicious users from accessing your site and ensuring your and your visitors’ privacy is protected.
 
 [Introduction for Cloudflare Turnstile](https://blog.cloudflare.com/turnstile-private-captcha-alternative/)
-
-## Showcases
-
-### [Telegram Watchdog](https://github.com/tg-watchdog/tg-watchdog)
-
-*Telegram Watchdog* is a Telegram bot used for anti-abuse from Telegram group chats.
-
-<img src="https://i.imgur.com/p593rwY.jpg" width="300px"/>
-
-[Get into Telegram Watchdog community to give a try](https://t.me/tgwatchdog_chat)
 
 ## Installation & Usage
 
@@ -41,7 +31,7 @@ import Turnstile from 'cfturnstile-vue2'
 export default defineComponent({
   name: 'App',
   components: {
-    Turnstile
+    'cfturnstile': Turnstile
   },
   data() {
     return {
@@ -54,5 +44,5 @@ export default defineComponent({
     }
   }
 })
-</scirpt>
+</script>
 ```
