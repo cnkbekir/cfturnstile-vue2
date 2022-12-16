@@ -1,6 +1,6 @@
 {
   "name": "cfturnstile-vue2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "./dist/cfturnstile-vue2.umd.js",
   "scripts": {
     "build": "vue-tsc --declaration --emitDeclarationOnly && vite build",
