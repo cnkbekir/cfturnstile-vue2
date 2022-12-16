@@ -26,7 +26,12 @@ export default defineComponent({
         script.async = true
         script.defer = true
         document.head.appendChild(script)
-      }
+      }else{window.turnstile?.render("#turnstile-box", {
+          sitekey: props.sitekey,
+          callback: (response: string) => context.emit('verify', response),
+          'expired-callback': context.emit('expire'),
+          'error-callback': context.emit('fail')
+        })}
       renderTurnstile()
     })
 
@@ -46,7 +51,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div ref="turnstileBox" id="turnstile-box"></div>
+  <div ref="turnstileBox" id="turnstile-box" data-theme="light"></div>
 </template>
 
 <style scoped>
